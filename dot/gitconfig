@@ -1,0 +1,9 @@
+[user]
+  name = Yeqing Liu
+  email = 40677349+PeasOfMind@users.noreply.github.com
+[github]
+	user = PeasOfMind
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
