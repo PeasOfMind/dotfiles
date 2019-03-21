@@ -9,3 +9,5 @@ for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
 
 #Spectacle
 ln -sfn ~/.dotfiles/programs/spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+echo "Success"
