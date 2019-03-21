@@ -1,13 +1,29 @@
-#!/bin/bash
+#!/bin/zsh
 set -e
 
-# Symlink dot/* into home directory as hidden files
-for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
+#cloning with "--recurse-submodules" vs. "--recursive"
+mkdir -p ~/.zprezto
+cd ~/.zprezto
+if [ -d .git ]; then
+    git pull
+else
+    git clone --recurse-submodules https://github.com/sorin-ionescu/prezto.git ~/.zprezto
+fi;
+
+setopt EXTENDED_GLOB
+#for every file in rumcoms except for README.md
+#symlink into home directory
+for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
+  ln -sfn "$rcfile" ~/.${rcfile:t}
+done
 
 # Symlink files/* into home directory as regular files
 # for f in $(ls -d ~/.dotfiles/files/*); do ln -sfn $f ~/$(basename $f); done
 
 #Spectacle
 ln -sfn ~/.dotfiles/programs/spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
+
+# Symlink dot/* into home directory as hidden files
+for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
 
 echo "Success"
