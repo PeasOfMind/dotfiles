@@ -2,3 +2,10 @@
 set -e
 
 # After brew installed goes here!
+# cat << EOF >> ~/.bash_profile
+# Add Visual Studio Code (code)
+# export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+#EOF
+
+# Set shell to be homebrew installed zsh
+sudo dscl . -create /Users/$USER UserShell $(brew --prefix)/bin/zsh
