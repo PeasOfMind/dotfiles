@@ -1,6 +1,9 @@
 #!/bin/zsh
 set -e
 
+# System Preferences > Dock > Automatically hide and show the Dock:
+defaults write com.apple.dock autohide -bool true
+
 #cloning with "--recurse-submodules" vs. "--recursive"
 mkdir -p ~/.zprezto
 cd ~/.zprezto
