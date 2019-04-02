@@ -4,6 +4,16 @@ set -e
 # System Preferences > Dock > Automatically hide and show the Dock:
 defaults write com.apple.dock autohide -bool true
 
+### Finder Preferences ###
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
 #cloning with "--recurse-submodules" vs. "--recursive"
 mkdir -p ~/.zprezto
 cd ~/.zprezto
@@ -14,7 +24,7 @@ else
 fi;
 
 setopt EXTENDED_GLOB
-#for every file in rumcoms except for README.md
+#for every file in runcoms except for README.md
 #symlink into home directory
 for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
   ln -sfn "$rcfile" ~/.${rcfile:t}
