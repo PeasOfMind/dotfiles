@@ -36,6 +36,9 @@ done
 #Spectacle
 ln -sfn ~/.dotfiles/programs/spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
 
+#Visual Studio Code
+ln -sfn ~/.dotfiles/programs/code/settings.json ~/Library/Application\ Support/Code/User/settings.json
+
 # Symlink dot/* into home directory as hidden files
 for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
 
