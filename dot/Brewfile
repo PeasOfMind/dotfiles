@@ -18,6 +18,8 @@ brew 'xz'
 brew 'zsh'
 
 cask 'carbon-copy-cloner'
+cask 'cheatsheet'
+cask 'dash'
 cask 'dashlane'
 cask 'discord'
 cask 'firefox'
