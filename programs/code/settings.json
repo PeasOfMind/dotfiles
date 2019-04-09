@@ -1,5 +1,10 @@
 {
     "window.zoomLevel": 0,
     "editor.tabSize": 2,
-    "editor.rulers": [80]
+    "editor.rulers": [
+        80
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
