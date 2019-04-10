@@ -1,0 +1,11 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+left",
+    "command": "editor.action.moveCarretLeftAction"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "editor.action.moveCarretRightAction"
+  }
+]
