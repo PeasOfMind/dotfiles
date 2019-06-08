@@ -8,5 +8,7 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.renderWhitespace": "boundary",
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
