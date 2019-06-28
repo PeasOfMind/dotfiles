@@ -1,3 +1,4 @@
+brew 'ag'
 brew 'coreutils'
 brew 'git'
 brew 'icu4c'
