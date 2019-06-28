@@ -10,5 +10,9 @@
     "editor.renderWhitespace": "boundary",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
+    
 }
