@@ -30,15 +30,6 @@ for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
   ln -sfn "$rcfile" ~/.${rcfile:t}
 done
 
-# Symlink files/* into home directory as regular files
-# for f in $(ls -d ~/.dotfiles/files/*); do ln -sfn $f ~/$(basename $f); done
-
-#Spectacle
-ln -sfn ~/.dotfiles/programs/spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
-
-#Visual Studio Code
-for f in $(ls -d ~/.dotfiles/programs/code/*); do ln -sfn $f ~/Library/Application\ Support/Code/User/$(basename $f); done
-
 # Symlink dot/* into home directory as hidden files
 for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
 
