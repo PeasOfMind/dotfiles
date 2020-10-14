@@ -33,4 +33,4 @@ done
 # Symlink dot/* into home directory as hidden files
 for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
 
-echo "Success"
+echo "Successful setup"
