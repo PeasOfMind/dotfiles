@@ -10,10 +10,6 @@ set -e
 # Symlink files/* into home directory as regular files
 # for f in $(ls -d ~/.dotfiles/files/*); do ln -sfn $f ~/$(basename $f); done
 
-# Spectacle
-mkdir -p ~/Library/Application\ Support/Spectacle
-ln -sfn ~/.dotfiles/programs/spectacle/shortcuts.json ~/Library/Application\ Support/Spectacle/Shortcuts.json
-
 # Hammerspoon
 hammerspoondir=~/.hammerspoon
 mkdir -p $hammerspoondir
@@ -36,7 +32,7 @@ rm -rf Lunette
 # symlink the init.lua
 ln -sfn ~/.dotfiles/programs/hammerspoon/init.lua "$hammerspoondir/init.lua"
 
-# # Visual Studio Code
+# Visual Studio Code
 mkdir -p ~/Library/Application\ Support/Code/User
 for f in $(ls -d ~/.dotfiles/programs/code/*.json); do ln -sfn $f ~/Library/Application\ Support/Code/User/$(basename $f); done
 # install extensions

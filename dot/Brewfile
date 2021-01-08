@@ -33,11 +33,5 @@ cask 'postman'
 cask 'psequel'
 cask 'robo-3t'
 cask 'slack'
-cask 'spectacle'
 cask 'spotify'
 cask 'visual-studio-code'
-
-# mas 'Bear', id: 409201541
-# mas 'Numbers', id: 409203825
-# mas 'Pages', id: 409201541
-# mas 'Xcode', id: 497799835
