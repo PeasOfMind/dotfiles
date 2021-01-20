@@ -9,3 +9,7 @@
 	helper = osxkeychain
 [core]
 	excludesfile = "~/.dotfiles/files/.gitignore"
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main

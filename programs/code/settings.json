@@ -13,7 +13,6 @@
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    "editor.minimap.enabled": false,
-    "breadcrumbs.enabled": true,
-    
+    },
+    "liveshare.authenticationProvider": "GitHub"
 }
