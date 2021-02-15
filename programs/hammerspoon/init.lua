@@ -54,3 +54,17 @@ spoon.SpoonInstall:andUse("Lunette",
     hotkeys = customBindings
   }
 )
+
+chromeBrowser = "com.google.Chrome"
+-- Install and/or set up URLDispatcher
+spoon.SpoonInstall:andUse("URLDispatcher",
+  {
+    config = {
+      default_handler = "com.brave.Browser",
+      url_patterns = {
+        { "https?://meet%.google%.com", chromeBrowser }
+      }
+    },
+    start = true
+  }
+)
