@@ -1,5 +1,11 @@
--- Spectacle-like window management
-hs.loadSpoon("Lunette")
+-- Spoon installation manager
+hs.loadSpoon("SpoonInstall")
+spoon.SpoonInstall.repos.lunette = {
+  url = "https://github.com/scottwhudson/Lunette",
+  desc = "Spectacle-like window manager",
+}
+spoon.SpoonInstall.use_syncinstall = true
+
 customBindings = {
   leftHalf = {
     {{"alt", "ctrl"}, "left"},
@@ -41,4 +47,10 @@ customBindings = {
   redo = false
 }
 
-spoon.Lunette:bindHotkeys(customBindings)
+-- Install and/or set up the Lunette window manager
+spoon.SpoonInstall:andUse("Lunette",
+  {
+    repo = "lunette",
+    hotkeys = customBindings
+  }
+)

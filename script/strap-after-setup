@@ -13,21 +13,17 @@ set -e
 # Hammerspoon
 hammerspoondir=~/.hammerspoon
 mkdir -p $hammerspoondir
-echo "dowloading the Lunette spoon"
-# download and copy over Lunette spoon
-git clone git@github.com:scottwhudson/Lunette.git &> /dev/null
-if [[ $? -eq 128 ]]; then
-    echo "spoon repo already exists."
-elif [[ $? -eq 0 ]]; then
-    echo "Cloned spoon repo."
-else
-    echo "Failed to clone spoon repo."
-fi
+# Create the spoons directory
 spoonsdir="$hammerspoondir/Spoons"
-echo $spoonsdir
 mkdir -p $spoonsdir
-cp -R Lunette/Source/Lunette.spoon $spoonsdir
-rm -rf Lunette
+
+# download and copy over spoon installation manager
+echo "downloading SpoonInstall"
+installfile=SpoonInstall.spoon.zip
+wget "https://github.com/Hammerspoon/Spoons/raw/master/Spoons/$installfile"
+# unzip and replace contents of existing SpoonInstall folder if present
+unzip -o $installfile -d $spoonsdir
+rm -f $installfile
 
 # symlink the init.lua
 ln -sfn ~/.dotfiles/programs/hammerspoon/init.lua "$hammerspoondir/init.lua"
