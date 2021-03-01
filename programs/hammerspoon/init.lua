@@ -68,11 +68,3 @@ spoon.SpoonInstall:andUse("URLDispatcher",
     start = true
   }
 )
-
--- Install and use ClipboardTool
-spoon.SpoonInstall:andUse("ClipboardTool", {
-  start = true,
-  hotkeys = {
-    toggle_clipboard = { { "cmd", "shift"}, "v" }
-  }
-})
