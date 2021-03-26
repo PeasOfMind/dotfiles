@@ -14,5 +14,6 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "liveshare.authenticationProvider": "GitHub"
+    "liveshare.authenticationProvider": "GitHub",
+    "files.autoSave": "afterDelay"
 }
