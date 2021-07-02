@@ -1,8 +1,15 @@
 #!/bin/zsh
 set -e
 
-# System Preferences > Dock > Automatically hide and show the Dock:
+### System Preferences > Dock ###
+# Automatically hide and show the Dock:
 defaults write com.apple.dock autohide -bool true
+# Set autohide delay to 2 seconds:
+defaults write com.apple.dock autohide-delay -float 2
+# Make dock really small:
+defaults write com.apple.dock tilesize -integer 16
+# Only show apps being used:
+defaults write com.apple.dock static-only -bool true; killall Dock
 
 ### Finder Preferences ###
 # Finder: show all filename extensions
@@ -24,8 +31,8 @@ else
 fi;
 
 setopt EXTENDED_GLOB
-#for every file in runcoms except for README.md
-#symlink into home directory
+# for every file in runcoms except for README.md
+# symlink into home directory
 for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
   ln -sfn "$rcfile" ~/.${rcfile:t}
 done
