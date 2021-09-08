@@ -16,5 +16,6 @@
     },
     "liveshare.authenticationProvider": "GitHub",
     "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Default Dark+"
+    "workbench.colorTheme": "Default Dark+",
+    "files.insertFinalNewline": true
 }
