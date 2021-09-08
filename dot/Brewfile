@@ -20,7 +20,7 @@ brew 'zsh'
 
 cask 'brave-browser'
 cask '1password'
-cask 'dashlane'
+cask 'dash'
 cask 'discord'
 cask 'flux'
 cask 'google-chrome'
