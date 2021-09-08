@@ -3,3 +3,6 @@
 
 # VSC project specific configurations
 .vscode/*
+
+# nodenv specified node version
+.node-version
