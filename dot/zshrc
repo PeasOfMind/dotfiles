@@ -14,3 +14,4 @@ fi
 
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 export PATH="/opt/homebrew/bin:$PATH"
+eval "$(rbenv init -)"
