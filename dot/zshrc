@@ -12,6 +12,7 @@ fi
 
 # Customize to your needs...
 
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 export PATH="/opt/homebrew/bin:$PATH"
 eval "$(rbenv init -)"
+# Add Visual Studio Code (code)
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
