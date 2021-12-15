@@ -4,17 +4,18 @@
     "editor.rulers": [
         80
     ],
+    "editor.renderWhitespace": "all",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.renderWhitespace": "all",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "liveshare.authenticationProvider": "GitHub",
     "files.autoSave": "afterDelay",
     "workbench.colorTheme": "Default Dark+",
     "files.insertFinalNewline": true
