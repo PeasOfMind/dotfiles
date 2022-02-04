@@ -4,3 +4,5 @@ esbenp.prettier-vscode
 rebornix.ruby
 vscodevim.vim
 wingrunr21.vscode-ruby
+misogi.ruby-rubocop
+waderyan.gitblame
